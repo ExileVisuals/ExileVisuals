@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--I invite you to the Homeschool Club opening!-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>The Gamer Club</title>
+  
+<style>
+    body{
+        overflow-x:hidden;
+        overflow-y:scroll;
+        margin:0px;
+        text-align:center;
+        font-family:"AR ESSENCE Medium";
+    }
+    h1{
+       color:white;
+       margin:0px;
+       background:url("https://upload.wikimedia.org/wikipedia/commons/c/c0/LOL2016WorldsFinalsArena.jpg") center fixed ;
+       font-family: 'AR BLANCA Medium';
+       font-size:50px;
+    }
+    h2{
+       
+       font-family: 'AR Berkley Medium';
+    }
+    #join{
+        background-color:rgb(0, 123, 255); 
+        color:white;
+    }    
+    header{
+        margin:0;
+        position:fixed;
+        top: 0px;
+        left: 0px;
+        background-color:transparent;
+        padding:20px;
+    }
+    header nav {
+        
+        margin:0;
+        z-index: 1;
+        width: 95vw;
+        cursor:pointer;
+    } 
+    header a{
+       
+       color:white;
+       text-decoration:none;
+       float:right;
+       padding-left:27px;  
+    }
+    header nav h3{
+       
+       font-family:"AR BLANCA Medium";
+       float:left;
+       margin:-5px; 
+       transition:all  1.0s;
+    }
+    a:hover{
+       color:#F; 
+    }
+    
+    #members{
+       background:url("https://upload.wikimedia.org/wikipedia/commons/c/c0/LOL2016WorldsFinalsArena.jpg") center fixed;
+       color:white;
+       margin-top: -20px;
+       padding: 0;
+       border: 0;
+       background-color:#651FFF;
+    }
+    h2{
+        margin-top:20px;
+    }
+    div{
+        padding:20px;
+    }
+        
+    </style>    
+    </head>
+    <body>
+<header>
+    
+    <nav>
+      <h3><a href="#h">TGC</a></h3>
+      <a href="#members">Members</a>
+       <a href="#join">Join</a>
+        <a href="#about">About</a>
+        
+        
+    </nav>
+</header>
+
+
+<h1 id="h"><br>The Gamer Club<br><br></h1><div id="about"><h2>About</h2><p>We are a group of gamers that chat, practice, learn, and program with each other. We are a coding club, a gamer club, and a learning club. </p></div><div id="join"><h2>Join</h2><p>You must be a competitive gamer to join, and love learning and You must finish 50% of Intro to JS or Intro to HTML/CSS. You don't have to be a gamer to join chat/study, but you have to be a Gamer  to join the club.<br></p></div><div id="members"><h2>Members</h2><p><br>ExileVisuals Founder/CEO</p></div>
+
+<div id="fakebox-text">Sign Up<br>
+Enter User Name and Spin-off!
+</div>
+<input id="fakebox-input" autocomplete="off" tabindex="-1" type="url" aria-hidden="true">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+
+
+<script>
+ TweenMax.from("body", 6, {scale:0, rotation:90,  ease: Elastic.easeOut.config(1, 0.3), y: -416 })
+ TweenMax.to("header",5, {backgroundColor:"white", delay:2});
+ TweenMax.to("a",5, {color:"#651FFF", delay:2});
+ TweenMax.from("html",5,{opacity:11})
+
+</script>
+    </body>
+</html>
